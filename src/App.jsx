@@ -1,10 +1,10 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <>
-      <div className="w-full flex justify-center">
-        <h2>In progress...</h2>
-      </div>
-    </>
+    <div className="w-screen h-screen text-gray-50 bg-custom-dark ">
+      <Navbar />
+    </div>
   );
 }
 
