@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { FiX } from "react-icons/fi";
 
@@ -11,34 +11,37 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full flex justify-evenly items-center">
-      <a className="hover:text-purple-600 cursor-pointer m-4">
+    <div className="w-full max-w-screen-xl mx-auto flex justify-evenly items-center">
+      <a className=" duration-500  hover:text-purple-600 cursor-pointer m-4">
         <Link to={`/`}>
           <h1 className="text-3xl">FullStackSolutions</h1>
         </Link>
       </a>
       <ul className="hidden md:flex justify-end m-4 ">
-        <li className="p-4 hover:text-purple-600 ">
+        <li className="p-4 hover:text-purple-600 duration-500 ">
           <Link to={`/about`}>About me</Link>
         </li>
-        <li className="p-4 hover:text-purple-600">
+        <li className="p-4 hover:text-purple-600 duration-500">
           <Link to={`https://github.com/Mateusz627`}>GitHub</Link>
         </li>
-        <li className="p-4 hover:text-purple-600">
+        <li className="p-4 hover:text-purple-600 duration-500">
           <Link to={`/projects`}>Projects</Link>
         </li>
-        <li className="p-4 hover:text-purple-600">
+        <li className="p-4 hover:text-purple-600 duration-500">
           <Link to={`/contactme`}> Contact me</Link>
         </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {""}
         {nav ? (
-          <FiX size={20} className=" hover:text-purple-600 cursor-pointer" />
+          <FiX
+            size={20}
+            className=" hover:text-purple-600 duration-500 cursor-pointer"
+          />
         ) : (
           <CgMenu
             size={20}
-            className=" hover:text-purple-600 cursor-pointer "
+            className=" hover:text-purple-600 duration-500 cursor-pointer "
           />
         )}
       </div>
@@ -50,22 +53,22 @@ function Navbar() {
             : "ease-in-out duration-700 fixed left-[-100%] top-0 h-screen "
         }
       >
-        <a className="hover:text-purple-600 cursor-pointer m-4">
+        <a className="hover:text-purple-600 duration-500 cursor-pointer m-4">
           <Link to={`/`}>
             <h1 className="text-3xl m-2">FullStackSolutions</h1>
           </Link>
         </a>
         <ul className=" uppercase p-4 ">
-          <li className="p-4 border-b border-x-gray-600 hover:text-purple-600 cursor-pointer">
+          <li className="p-4 border-b border-x-gray-600 hover:text-purple-600 duration-500 cursor-pointer">
             <Link to={`/about`}>About me</Link>
           </li>
-          <li className="p-4 border-b border-x-gray-600 hover:text-purple-600 cursor-pointer">
+          <li className="p-4 border-b border-x-gray-600 hover:text-purple-600 duration-500 cursor-pointer">
             <Link to={`https://github.com/Mateusz627`}>GitHub</Link>
           </li>
-          <li className="p-4 border-b border-x-gray-600 hover:text-purple-600 cursor-pointer">
+          <li className="p-4 border-b border-x-gray-600 hover:text-purple-600 duration-500 cursor-pointer">
             <Link to={`/projects`}>Projects</Link>
           </li>
-          <li className="p-4 hover:text-purple-600 cursor-pointer">
+          <li className="p-4 hover:text-purple-600 duration-500 cursor-pointer">
             <Link to={`/contactme`}> Contact me</Link>
           </li>
         </ul>
