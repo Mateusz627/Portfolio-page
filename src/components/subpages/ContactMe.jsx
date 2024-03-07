@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 function ContactMe() {
   return (
     <div className="w-screen h-screen text-gray-50 bg-custom-dark ">

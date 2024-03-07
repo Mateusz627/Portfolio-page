@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import AboutMe from "./components/AboutMe.jsx";
-import Projects from "./components/Projects.jsx";
-import ContactMe from "./components/ContactMe.jsx";
+import AboutMe from "./components/subpages/AboutMe.jsx";
+import Projects from "./components/subpages/Projects.jsx";
+import ContactMe from "./components/subpages/ContactMe.jsx";
 import ErrorPage from "./error-page";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

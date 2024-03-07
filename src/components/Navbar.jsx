@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { FiX } from "react-icons/fi";
 
@@ -14,23 +14,32 @@ function Navbar() {
     <div className="w-full max-w-screen-xl mx-auto flex justify-evenly items-center">
       <Link
         to={`/`}
-        className=" duration-500  hover:text-purple-600 cursor-pointer m-4"
+        className="duration-500  hover:text-purple-600 cursor-pointer m-4"
       >
         <h1 className="text-3xl">FullStackSolutions</h1>
+        <ScrollRestoration />
       </Link>
 
       <ul className="hidden md:flex justify-end m-4 ">
         <li className="p-4 hover:text-purple-600 duration-500 ">
-          <Link to={`/about`}>About me</Link>
+          <Link to={`/about`}>
+            About me
+            <ScrollRestoration />
+          </Link>
         </li>
         <li className="p-4 hover:text-purple-600 duration-500">
           <Link to={`https://github.com/Mateusz627`}>GitHub</Link>
         </li>
         <li className="p-4 hover:text-purple-600 duration-500">
-          <Link to={`/projects`}>Projects</Link>
+          <Link to={`/projects`}>
+            Projects <ScrollRestoration />
+          </Link>
         </li>
         <li className="p-4 hover:text-purple-600 duration-500">
-          <Link to={`/contactme`}> Contact me</Link>
+          <Link to={`/contactme`}>
+            {" "}
+            Contact me <ScrollRestoration />
+          </Link>
         </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
@@ -61,6 +70,7 @@ function Navbar() {
           className="hover:text-purple-600 duration-500 cursor-pointer m-4"
         >
           <h1 className="text-3xl m-2">FullStackSolutions</h1>
+          <ScrollRestoration />
         </Link>
 
         <ul className=" uppercase p-4 ">
@@ -68,7 +78,10 @@ function Navbar() {
             onClick={handleNav}
             className="p-4 border-b border-x-gray-600 hover:text-purple-600 duration-500 cursor-pointer"
           >
-            <Link to={`/about`}>About me</Link>
+            <Link to={`/about`}>
+              About me
+              <ScrollRestoration />
+            </Link>
           </li>
           <li
             onClick={handleNav}
@@ -80,13 +93,20 @@ function Navbar() {
             onClick={handleNav}
             className="p-4 border-b border-x-gray-600 hover:text-purple-600 duration-500 cursor-pointer"
           >
-            <Link to={`/projects`}>Projects</Link>
+            <Link to={`/projects`}>
+              Projects
+              <ScrollRestoration />
+            </Link>
           </li>
           <li
             onClick={handleNav}
             className="p-4 hover:text-purple-600 duration-500 cursor-pointer"
           >
-            <Link to={`/contactme`}> Contact me</Link>
+            <Link to={`/contactme`}>
+              {" "}
+              Contact me
+              <ScrollRestoration />
+            </Link>
           </li>
         </ul>
       </div>

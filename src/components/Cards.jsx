@@ -4,7 +4,7 @@ import { GiAutoRepair } from "react-icons/gi";
 function Cards() {
   return (
     <>
-      <div className="mt-6 w-[70%] mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
+      <div className="mt-10 w-[70%] mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
         {/* Card One */}
         <div className="h-12 flex justify-center items-center bg-purple-600 rounded-t-2xl">
           <FaHtml5 className="size-7 pr-1" />
@@ -25,7 +25,7 @@ function Cards() {
         </div>
       </div>
       {/* Card Two */}
-      <div className="mt-6 w-[70%] mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
+      <div className="mt-10 w-[70%] mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
         {" "}
         <div className="h-12 flex justify-center items-center bg-purple-600 rounded-t-2xl">
           <FaCode className="size-7 pr-1" />
@@ -41,7 +41,7 @@ function Cards() {
       </div>
 
       {/* Card three */}
-      <div className="mt-6 w-[70%] mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
+      <div className="mt-10 w-[70%] mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
         {" "}
         <div className="h-12 flex justify-center items-center bg-purple-600 rounded-t-2xl">
           <GiAutoRepair className="size-7 pr-1" />

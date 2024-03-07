@@ -7,7 +7,7 @@ function AnimationPhone() {
         <Lottie animationData={animationData} className="w-[80%] md:w-40" />
       </div>
       <div>
-        <h2 className="text-2xl text-center mt-4">
+        <h2 className="text-2xl text-center mt-10">
           Creating websites is what I do.
         </h2>
       </div>
