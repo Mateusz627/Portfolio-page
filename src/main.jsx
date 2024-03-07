@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import AboutMe from "./components/About/AboutMe.jsx";
-import Projects from "./components/Projects/Projects.jsx";
-import ContactMe from "./components/Contact/ContactMe.jsx";
+import AboutMe from "./components/AboutMe.jsx";
+import Projects from "./components/Projects.jsx";
+import ContactMe from "./components/ContactMe.jsx";
 import ErrorPage from "./error-page";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -13,21 +13,22 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/about",
-        element: <AboutMe />,
-      },
+  },
+  {
+    path: "/about",
+    element: <AboutMe />,
+    errorElement: <ErrorPage />,
+  },
 
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-      {
-        path: "/contactme",
-        element: <ContactMe />,
-      },
-    ],
+  {
+    path: "/projects",
+    element: <Projects />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/contactme",
+    element: <ContactMe />,
+    errorElement: <ErrorPage />,
   },
 ]);
 
