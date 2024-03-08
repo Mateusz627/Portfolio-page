@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import AnimationPhone from "./components/AnimationPhone";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
+import MoreAbout from "./components/MoreAbout";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <AnimationPhone />
       <Cards />
+      <MoreAbout />
       <Footer />
     </div>
   );
