@@ -37,7 +37,6 @@ function Navbar() {
         </li>
         <li className="p-4 hover:text-purple-600 duration-500">
           <Link to={`/contactme`}>
-            {" "}
             Contact me <ScrollRestoration />
           </Link>
         </li>

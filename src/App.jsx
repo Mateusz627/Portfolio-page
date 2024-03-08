@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-screen h-full text-gray-50 bg-custom-dark ">
+    <div className="w-full h-full text-gray-50 bg-custom-dark ">
       <Navbar />
       <Hero />
       <AnimationPhone />
