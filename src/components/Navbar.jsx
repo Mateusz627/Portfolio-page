@@ -10,8 +10,12 @@ function Navbar() {
     setNav(!nav);
   };
 
+  nav
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
+
   return (
-    <div className="w-full max-w-screen-xl mx-auto flex justify-evenly items-center">
+    <div className="w-full max-w-screen-xl flex justify-evenly items-center">
       <Link
         to={`/`}
         className="duration-500  hover:text-purple-600 cursor-pointer m-4"
@@ -42,7 +46,6 @@ function Navbar() {
         </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
-        {""}
         {nav ? (
           <FiX
             size={20}
@@ -59,7 +62,7 @@ function Navbar() {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 border-r border-r-gray-900 bg-gray-800 "
+            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 border-r border-r-gray-900 bg-gray-800 md:hidden"
             : "ease-in-out duration-700 fixed left-[-100%] top-0 h-screen "
         }
       >
@@ -68,7 +71,7 @@ function Navbar() {
           onClick={handleNav}
           className="hover:text-purple-600 duration-500 cursor-pointer m-4"
         >
-          <h1 className="text-3xl m-2">FullStackSolutions</h1>
+          <h1 className="text-2xl m-2 ">FullStackSolutions</h1>
           <ScrollRestoration />
         </Link>
 
