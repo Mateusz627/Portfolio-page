@@ -4,8 +4,12 @@ import { Link, ScrollRestoration } from "react-router-dom";
 function MoreAbout() {
   return (
     <>
-      <div className="w-full mt-20 flex flex-col items-center md:flex">
-        <img src={moto1} alt="image" className="w-[70%] rounded-3xl mt-6" />
+      <div className="w-full mt-20 flex flex-col items-center md:flex-row justify-center">
+        <img
+          src={moto1}
+          alt="image"
+          className="w-[70%] max-w-md rounded-3xl mt-6"
+        />
         <div className="p-4">
           <h2 className="text-2xl">More about me</h2>
           <p>Click the button below to read more.</p>

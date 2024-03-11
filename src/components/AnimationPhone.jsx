@@ -12,9 +12,11 @@ function AnimationPhone() {
           />
         </div>
         <div>
-          <h2 className="text-2xl text-center mt-10">
-            Creating websites is what I do.
-          </h2>
+          <div className="text-center mt-10 font-whisper">
+            <h2 className="text-5xl p-4">Creating websites is what I do.</h2>
+
+            <p className="text-3xl font-whisper p-3">- MS</p>
+          </div>
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ function Cards() {
         <h2 className="text-2xl">Technologies I use:</h2>
       </div>
       <div className="lg:flex justify-evenly">
-        <div className="mt-10 w-[70%] md:w-[40%] lg:w-72 mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
+        <div className="mt-10 w-[70%] md:w-[40%] lg:w-72 mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl hover:transform hover:scale-110 duration-500">
           {/* Card One */}
           <div className="h-12  flex justify-center items-center bg-purple-600 rounded-t-2xl">
             <FaHtml5 className="size-7 pr-1" />
@@ -29,13 +29,13 @@ function Cards() {
           </div>
         </div>
         {/* Card Two */}
-        <div className="mt-10 w-[70%] md:w-[40%] lg:w-72 mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
+        <div className="mt-10 w-[70%] md:w-[40%] lg:w-72 mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl hover:transform hover:scale-110 duration-500">
           {" "}
           <div className="h-12 flex justify-center items-center bg-purple-600 rounded-t-2xl">
             <FaCode className="size-7 pr-1" />
             <h2>Back End</h2>
           </div>
-          <div className="text-center h-60 pt-2 flex flex-col content-center">
+          <div className="text-center h-60 pt-2 flex flex-col justify-center content-center">
             <p>NodeJS</p>
             <p>ExpressJS</p>
             <p>MySQL</p>
@@ -45,13 +45,13 @@ function Cards() {
         </div>
 
         {/* Card three */}
-        <div className="mt-10 w-[70%] md:w-[40%] lg:w-72 mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl">
+        <div className="mt-10 w-[70%] md:w-[40%] lg:w-72 mx-auto flex flex-col justify-center bg-purple-900 rounded-3xl transform hover:scale-110 duration-500">
           {" "}
           <div className="h-12 flex justify-center items-center bg-purple-600 rounded-t-2xl">
             <GiAutoRepair className="size-7 pr-1" />
             <h2>Other</h2>
           </div>
-          <div className="text-center h-60 pt-2 flex flex-col content-center">
+          <div className="text-center h-60 pt-2 flex flex-col justify-center content-center">
             <p>Git</p>
             <p>Netlify</p>
             <p>Vercel</p>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { FiX } from "react-icons/fi";
@@ -14,8 +14,15 @@ function Navbar() {
     ? (document.body.style.overflow = "hidden")
     : (document.body.style.overflow = "auto");
 
+  useEffect(() => {
+    let handler = () => {
+      setNav(false);
+    };
+    document.addEventListener("mousedown", handler);
+  });
+
   return (
-    <div className="w-full max-w-screen-xl flex justify-evenly items-center">
+    <div className="w-full flex justify-evenly items-center">
       <Link
         to={`/`}
         className="duration-500  hover:text-purple-600 cursor-pointer m-4"

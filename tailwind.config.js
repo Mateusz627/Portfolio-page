@@ -6,6 +6,9 @@ export default {
       colors: {
         "custom-dark": "#121a26",
       },
+      fontFamily: {
+        whisper: ["Whisper", "sans-serif"],
+      },
     },
   },
   plugins: [],
