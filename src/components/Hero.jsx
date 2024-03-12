@@ -1,5 +1,6 @@
 import img from "../assets/photoCV1.jpg";
 import { ReactTyped } from "react-typed";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -26,8 +27,14 @@ function Hero() {
             />
           </div>
         </div>
-
-        <img src={img} alt="photo" className="size-48 rounded-full mt-6" />
+        <motion.img
+          src={img}
+          alt="photo"
+          className="size-48 rounded-full mt-6"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9 }}
+        />
       </div>
     </>
   );
