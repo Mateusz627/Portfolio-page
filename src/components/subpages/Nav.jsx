@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { FiX } from "react-icons/fi";
-import { motion } from "framer-motion";
 
-function Navbar() {
+function Nav() {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -33,49 +32,28 @@ function Navbar() {
       </Link>
 
       <ul className="hidden md:flex justify-end m-4 ">
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <li className="p-4 hover:text-purple-600 duration-500 ">
-            <Link to={`/about`}>
-              About me
-              <ScrollRestoration />
-            </Link>
-          </li>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <li className="p-4 hover:text-purple-600 duration-500">
-            <Link to={`https://github.com/Mateusz627`}>GitHub</Link>
-          </li>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
-        >
-          <li className="p-4 hover:text-purple-600 duration-500">
-            <Link to={`/projects`}>
-              Projects <ScrollRestoration />
-            </Link>
-          </li>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-        >
-          <li className="p-4 hover:text-purple-600 duration-500">
-            <Link to={`/contactme`}>
-              Contact me <ScrollRestoration />
-            </Link>
-          </li>
-        </motion.div>
+        <li className="p-4 hover:text-purple-600 duration-500 ">
+          <Link to={`/about`}>
+            About me
+            <ScrollRestoration />
+          </Link>
+        </li>
+
+        <li className="p-4 hover:text-purple-600 duration-500">
+          <Link to={`https://github.com/Mateusz627`}>GitHub</Link>
+        </li>
+
+        <li className="p-4 hover:text-purple-600 duration-500">
+          <Link to={`/projects`}>
+            Projects <ScrollRestoration />
+          </Link>
+        </li>
+
+        <li className="p-4 hover:text-purple-600 duration-500">
+          <Link to={`/contactme`}>
+            Contact me <ScrollRestoration />
+          </Link>
+        </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? (
@@ -94,8 +72,8 @@ function Navbar() {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 border-r border-r-gray-900 bg-gray-800 md:hidden z-10"
-            : "ease-in-out duration-700 fixed left-[-100%] top-0 h-screen "
+            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 border-r border-r-gray-900 bg-gray-800 md:hidden"
+            : "ease-in-out duration-700 fixed left-[-100%] top-0 h-screen"
         }
       >
         <Link
@@ -104,7 +82,6 @@ function Navbar() {
           className="hover:text-purple-600 duration-500 cursor-pointer m-4"
         >
           <h1 className="text-2xl m-2 ">FullStackSolutions</h1>
-
           <ScrollRestoration />
         </Link>
 
@@ -149,4 +126,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;

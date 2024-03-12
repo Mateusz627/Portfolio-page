@@ -1,4 +1,4 @@
-import Navbar from "../Navbar";
+import Nav from "./Nav";
 import Footer from "../Footer";
 import { Link, ScrollRestoration } from "react-router-dom";
 import { FaLinkedin, FaPhoneAlt } from "react-icons/fa";
@@ -8,7 +8,8 @@ import { motion } from "framer-motion";
 function ContactMe() {
   return (
     <div className="w-screen h-screen text-gray-50 bg-custom-dark ">
-      <Navbar />
+      <Nav />
+
       <div className="p-4 text-center mt-10 text-xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

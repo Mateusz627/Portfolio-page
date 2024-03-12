@@ -1,16 +1,16 @@
 import moto2 from "../../assets/moto2.jpg";
-import Navbar from "../Navbar";
+import Nav from "./Nav";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
 
 function AboutMe() {
   return (
     <div className="w-full h-full text-gray-50 bg-custom-dark scrollbar-red-500">
-      <Navbar />
+      <Nav />
       <div className="w-full flex flex-col items-center md:flex-row justify-center gap-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, x: -500 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.8, x: -50, y: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
           transition={{ duration: 1 }}
         >
           {" "}
@@ -21,8 +21,8 @@ function AboutMe() {
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.8, x: 500 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.8, x: 50, y: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
           transition={{ duration: 1 }}
         >
           <div className="p-4 flex justify-center">

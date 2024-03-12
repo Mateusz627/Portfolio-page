@@ -1,9 +1,9 @@
-import Navbar from "../Navbar";
+import Nav from "./Nav";
 
 function Projects() {
   return (
     <div className="w-screen h-screen text-gray-50 bg-custom-dark ">
-      <Navbar />
+      <Nav />
       <p>Projects page in progres...</p>
     </div>
   );
