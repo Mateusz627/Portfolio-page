@@ -9,7 +9,7 @@ function ContactMe() {
     <div className="w-screen h-screen text-gray-50 bg-custom-dark ">
       <Navbar />
       <div className="p-4 text-center mt-10 text-xl">
-        <h2 className="text-xl">
+        <h2 className="text-2xl">
           Choose <span className="text-purple-500">a way</span> to{" "}
           <span className="text-purple-500">contact me</span> :
         </h2>
