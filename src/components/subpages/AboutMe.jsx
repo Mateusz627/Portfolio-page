@@ -17,7 +17,7 @@ function AboutMe() {
           <img
             src={moto2}
             alt="image"
-            className="p-4 w-[80%] md:w-96 rounded-3xl mt-10"
+            className="p-4 mx-auto w-[80%] md:w-96 rounded-3xl mt-10"
           />
         </motion.div>
         <motion.div
@@ -25,7 +25,6 @@ function AboutMe() {
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          {" "}
           <div className="p-4 flex justify-center">
             {" "}
             <div className="mt-10 w-[70%] md:w-[40%] lg:w-80 bg-gray-800 rounded-3xl">
