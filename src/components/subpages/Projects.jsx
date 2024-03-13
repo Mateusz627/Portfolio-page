@@ -2,6 +2,9 @@ import Nav from "./Nav";
 import { useState } from "react";
 import { FiX } from "react-icons/fi";
 import spotify1 from "../../assets/spotifycloneSc/spotify1.png";
+import spotify2 from "../../assets/spotifycloneSc/spotify2.png";
+import spotify3 from "../../assets/spotifycloneSc/spotify3.png";
+import spotify4 from "../../assets/spotifycloneSc/spotify4.png";
 
 function Projects() {
   const [popUp, setPopUp] = useState(false);
@@ -38,9 +41,12 @@ function Projects() {
                 Technologies: Next 13, React, Tailwind, Supabase, PostgreSQL
               </p>
             </div>
-            <div onClick={handlePop} className="w-full text-center p-4">
+            <div className="w-full text-center p-4">
               {" "}
-              <a className="border hover:border-purple-500 hover:text-purple-500 p-2 rounded-md cursor-pointer">
+              <a
+                onClick={handlePop}
+                className="border hover:border-purple-500 hover:text-purple-500 p-2 rounded-md cursor-pointer"
+              >
                 Check out
               </a>
             </div>
@@ -48,23 +54,41 @@ function Projects() {
           <div
             className={
               popUp
-                ? "w-[70%] h-[70%] bg-slate-700 z-10 fixed rounded-2xl text-center"
-                : "ease-in-out  duration-700 fixed hidden"
+                ? "w-[90%] h-[80%] md:max-w-4xl md:max-h-[1000px] bg-slate-700 z-10 fixed rounded-2xl overflow-clip"
+                : "ease-in-out duration-700 fixed hidden"
             }
           >
-            <div className="flex justify-center items-center gap-10">
+            <div className="p-4 flex justify-between items-center bg-slate-800 gap-10">
               {" "}
-              <h2>Spotify Clone</h2>
+              <h2 className="text-xl">Spotify Clone</h2>
               <FiX
                 onClick={handlePop}
-                className="cursor-pointer hover:text-purple-500"
+                className="cursor-pointer size-7 bg-gray-800 rounded-full text-gray-500 hover:text-white hover:bg-purple-500 duration-500"
               />
             </div>
-
-            <div>
-              <img className="" src={spotify1} alt="screenshot" />
-              <img className="" src="" alt="" />
-              <img className="" src="" alt="" />
+            <div className="w-full h-full overflow-scroll overflow-x-hidden">
+              <div className=" flex flex-col ">
+                <img
+                  className="p-4 w-full hidden md:flex"
+                  src={spotify1}
+                  alt="screenshot"
+                />
+                <img
+                  className="p-4 w-full flex md:hidden"
+                  src={spotify2}
+                  alt="screenshot"
+                />
+                <img
+                  className="p-4 w-full hidden md:flex"
+                  src={spotify3}
+                  alt="screenshot"
+                />
+                <img
+                  className="p-4 w-full flex md:hidden"
+                  src={spotify4}
+                  alt="screenshot"
+                />
+              </div>
             </div>
           </div>
         </div>
