@@ -30,12 +30,12 @@ function AboutMe() {
             {" "}
             <div className="mt-10 w-[90%] md:w-80 bg-gray-800 rounded-3xl">
               {" "}
-              <div className="h-12 flex justify-center items-center rounded-t-2xl">
-                <h2 className="text-xl text-center p-2">
+              <div className="flex justify-center items-center rounded-t-2xl">
+                <h2 className="text-xl text-center p-4">
                   Hello, my name is Mateusz.
                 </h2>
               </div>
-              <div className="text-center p-2 ">
+              <div className="text-center p-4 ">
                 <p>
                   {" "}
                   I've dedicated countless hours to coding over the past year,
