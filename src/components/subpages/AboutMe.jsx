@@ -7,30 +7,33 @@ function AboutMe() {
   return (
     <div className="w-full h-full text-gray-50 bg-custom-dark scrollbar-red-500">
       <Nav />
-      <div className="w-full flex flex-col items-center md:flex-row justify-center gap-10">
+      <div className="w-full flex flex-col items-center md:flex-row justify-center lg:gap-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          {" "}
-          <img
-            src={moto2}
-            alt="image"
-            className="p-4 mx-auto w-[80%] md:w-96 rounded-3xl mt-10"
-          />
+          <div className="md:w-full">
+            <img
+              src={moto2}
+              alt="image"
+              className="p-4 mx-auto w-[80%]  lg:w-96 rounded-3xl mt-10"
+            />
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="p-4 flex justify-center">
+          <div className="flex justify-center p-4">
             {" "}
-            <div className="mt-10 w-[70%] md:w-[40%] lg:w-80 bg-gray-800 rounded-3xl">
+            <div className="mt-10 w-[90%] md:w-80 bg-gray-800 rounded-3xl">
               {" "}
               <div className="h-12 flex justify-center items-center  rounded-t-2xl">
-                <h2 className="text-xl">Hello, my name is Mateusz.</h2>
+                <h2 className="text-xl text-center p-2">
+                  Hello, my name is Mateusz.
+                </h2>
               </div>
               <div className="text-center p-2 ">
                 <p>
