@@ -41,7 +41,7 @@ function Cards() {
               <FaCode className="size-7 pr-1" />
               <h2>Back End</h2>
             </div>
-            <div className="text-center h-60 pt-2 flex flex-col justify-center content-center">
+            <div className="text-center h-60 pt-2 flex flex-col">
               <p>NodeJS</p>
               <p>ExpressJS</p>
               <p>MySQL</p>
@@ -57,12 +57,12 @@ function Cards() {
               <GiAutoRepair className="size-7 pr-1" />
               <h2>Other</h2>
             </div>
-            <div className="text-center h-60 pt-2 flex flex-col justify-center content-center">
-              <p>Git</p>
+            <div className="text-center h-60 pt-2 flex flex-col">
               <p>Netlify</p>
               <p>Vercel</p>
               <p>Supabase</p>
               <p>WebStorm</p>
+              <p>Git</p>
             </div>
           </div>
         </div>

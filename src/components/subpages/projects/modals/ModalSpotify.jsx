@@ -8,6 +8,10 @@ import spotify5 from "../../../../assets/spotifycloneSc/spotify5.png";
 const ModalSpotify = ({ open, onClose }) => {
   if (!open) return null;
 
+  open
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
+
   return (
     <div
       onClick={onClose}
