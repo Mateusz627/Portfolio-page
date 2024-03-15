@@ -51,7 +51,9 @@ function Navbar() {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <li className="p-4 hover:text-purple-600 duration-500">
-            <Link to={`https://github.com/Mateusz627`}>GitHub</Link>
+            <a href="https://github.com/Mateusz627" target="_blank">
+              GitHub
+            </a>
           </li>
         </motion.div>
         <motion.div
