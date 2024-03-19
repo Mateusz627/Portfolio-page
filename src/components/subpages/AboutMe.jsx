@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function AboutMe() {
   return (
-    <div className="w-full h-full text-gray-50 bg-custom-dark scrollbar-red-500">
+    <div className="w-full h-full lg:h-screen text-gray-50 bg-custom-dark scrollbar-red-500">
       <Nav />
       <div className="w-full flex flex-col justify-center items-center md:flex-row lg:gap-10">
         <motion.div
