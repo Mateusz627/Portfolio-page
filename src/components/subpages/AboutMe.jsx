@@ -32,24 +32,22 @@ function AboutMe() {
               {" "}
               <div className="flex justify-center items-center rounded-t-2xl">
                 <h2 className="text-xl text-center p-4">
-                  Hello, my name is Mateusz.
+                     Hi, I’m Mateusz.
                 </h2>
               </div>
               <div className="text-center p-4 ">
                 <p>
                   {" "}
-                  I've dedicated countless hours to coding over the past year,
-                  and my GitHub profile is a testament to my commitment and
-                  progress. Through consistent daily coding practice, I have
-                  consistently excelled in my skills and expanded my knowledge
-                  of various programming languages and frameworks. Through my IT
-                  internship at the Erasmus+ National Agency, I gained valuable
-                  experience in the field of information technology and SEO.
-                  Working as a website administrator and order processor at
-                  Mbiotica allowed me to develop my Prestashop skills. These
-                  lessons learned set me on a path of development as a
-                  programmer, which resulted in the completion of a JavaScript
-                  Developer bootcamp.
+               
+Since last year, I’ve devoted a great amount of time for the development of my
+computer programming skills. Through consistent everyday practice, I gain new
+knowledge and improve my understanding of diverse programming languages and
+frameworks. I did an internship at the National Agency of the Erasmus+ Programme
+and this allowed me to acquire valuable experience in the area of information
+technology and web positioning. I also used to work as an online shop administrator
+and at that time I mastered the PrestaShop software. Recently, I’ve completed a
+coding boot camp of JavaScript Developer. These experiences have eventually led
+to a decision to pursue a career as a professional software engineer.
                 </p>
               </div>
             </div>
